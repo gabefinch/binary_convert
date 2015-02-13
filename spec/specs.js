@@ -40,4 +40,12 @@ describe("decToHex", function(){
   it("returns 'a' for input 10", function(){
     expect(decToHex(10)).to.equal('a');
   });
+
+  it("returns 'f' for input 15", function(){
+    expect(decToHex(15)).to.equal('f');
+  });
+
+  it("for input 16, returns '10'", function(){
+    expect(decToHex(16)).to.equal('10');
+  });
 });
